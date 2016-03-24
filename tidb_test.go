@@ -69,7 +69,7 @@ func (s *testMainSuite) SetUpSuite(c *C) {
 	s.selectSQL = `SELECT * from tbl_test;`
 	runtime.GOMAXPROCS(runtime.NumCPU())
 
-	log.SetLevelByString("error")
+	log.SetLevelByString("debug")
 }
 
 func (s *testMainSuite) TearDownSuite(c *C) {
